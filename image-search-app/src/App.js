@@ -9,7 +9,6 @@ function App() {
     e.preventDefault();
     console.log(ref.current.value);
 
-    // URL for API
     const endpointURL =`https://pixabay.com/api/?key=40744009-556e92046e1377f65ada9324a&q=${ref.current.value}&image_type=photo`;
     fetch(endpointURL)
       .then((res) => {
